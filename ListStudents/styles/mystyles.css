@@ -1,0 +1,24 @@
+header {
+    width: 100px;
+    height: 20px;
+    border: 2px black solid;
+    float: left;
+    padding: 5px;
+    background-color: cadetblue;
+}
+
+div{
+    width: 100px;
+    height: 210px;
+    border: 2px black solid;
+    float: left;
+    padding: 5px;
+    background-color: #beffe5;
+}
+
+#content {
+    border: 3px aqua solid;
+    background-color: aquamarine;
+    width: 345px;
+    height: 260px;
+}

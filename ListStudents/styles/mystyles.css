@@ -6,7 +6,7 @@ header {
     background-color: cadetblue;
 }
 
-div{
+#gender, #names, #skype{
     width: 100px;
     border: 2px black solid;
     float: left;
@@ -18,5 +18,10 @@ div{
     border: 3px aqua solid;
     background-color: aquamarine;
     width: 345px;
+    float: left;
+    padding: 5px;
 
 }
+
+
+

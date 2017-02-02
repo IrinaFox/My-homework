@@ -2,7 +2,7 @@
  * Created by Liss on 02.02.2017.
  */
     //function for creating list of students
-
+//window.onload = function () {
     function createStudentsList () {
         var irina = new Student("Irina", "female", "princess_rina88");
         var svetlana = new Student("Svetlana", "female", "ami-caty");
@@ -13,25 +13,12 @@
 
         return [irina, svetlana, polina, elena, alexey, vladimir];
     }
-
-    createListStudents();
-
-    var students = createStudentsList();
-
-    var placeName = document.getElementById('names');
-    placeName.innerHTML += "!!!!";
-    console.log(placeName);
-    var placeGender = document.getElementById('gender');
-      var placeSkype = document.getElementById('skype');
+var students = createStudentsList();
+console.log(typeof students);
 
 
 
-    var creatingList = new StudentsList(students, placeName, placeGender, placeSkype);
-    creatingList.showList();
-
-
-
-   function createListStudents() {
+  /*  function createListStudents() {
     var content = document.getElementById('content');
 
     var names = document.createElement('header'),
@@ -43,14 +30,20 @@
         genderContent = document.createElement('div'),
         skypeContent = document.createElement('div');
 
+    namesContent.innerHTML = "Irina <br/><br/> Swetlana <br/><br/> Polina <br/><br/>" +
+    " Elena <br/><br/> Alexey <br/><br/> Vladimir ";
+    genderContent.innerHTML = "female <br/><br/> female <br/><br/> female <br/><br/>" +
+    "female <br/><br/> male <br/><br/> male <br/><br/> ";
+    skypeContent.innerHTML = "princess_rina88 <br/><br/> ami-caty <br/><br/>" +
+    "polina_volna <br/><br/> izaya256 <br/><br/> dn100980rev <br/><br/> vovanium ";
 
-       genderContent.setAttribute('id', 'gender');
-       namesContent.setAttribute('id', 'names');
-       skypeContent.setAttribute('id', 'skype');
+    gender.innerHTML = 'GENDER';
+    names.innerHTML = 'NAME';
+    skype.innerHTML = 'SKYPE';
 
-       names.innerHTML += "NAME";
-       gender.innerHTML += "GENDER";
-       skype.innerHTML += "SKYPE";
+    gender.setAttribute('id', 'gender');
+    names.setAttribute('id', 'names');
+    skype.setAttribute('id', 'skype');
 
     content.appendChild(names);
     content.appendChild(gender);
@@ -61,5 +54,6 @@
     content.appendChild(skypeContent);
 }
 
+createListStudents();
 
-
+}; */

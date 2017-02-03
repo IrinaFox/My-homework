@@ -4,10 +4,10 @@ header {
     border: 2px black solid;
     float: left;
     padding: 5px;
-    background-color: cadetblue;
+    background-color: #e0fff3;
 }
 #infoHeader {
-  background-color: #e0fff3;
+  background-color: #c7e4d8;
   width: 70px;
 }
 
@@ -21,6 +21,8 @@ header {
 }
 #info{
     width: 70px;
+    height: 229px;
+    background-color: #c7e4d8;
 }
 
 
@@ -46,4 +48,9 @@ header {
     padding: 5px;
     margin: 20px;
     background-color: #e7ece7;
+}
+
+input {
+    float: none;
+
 }

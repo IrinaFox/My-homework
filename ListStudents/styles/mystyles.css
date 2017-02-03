@@ -1,27 +1,49 @@
 header {
     width: 100px;
+    height: 30px;
     border: 2px black solid;
     float: left;
     padding: 5px;
     background-color: cadetblue;
 }
+#infoHeader {
+  background-color: #e0fff3;
+  width: 70px;
+}
 
-#gender, #names, #skype{
+#gender, #names, #skype, #info{
     width: 100px;
+
     border: 2px black solid;
     float: left;
     padding: 5px;
     background-color: #beffe5;
 }
+#info{
+    width: 70px;
+}
+
 
 #content {
     border: 3px aqua solid;
     background-color: aquamarine;
-    width: 345px;
+    width: 450px;
     float: left;
     padding: 5px;
 
 }
 
+#skypePic, #genderPic, #namePic {
+    width: 25px;
+    height: 25px;
+}
 
-
+#infoWindow {
+    width: 250px;
+    height: 100px;
+    border: 2px black solid;
+    float: left;
+    padding: 5px;
+    margin: 20px;
+    background-color: #e7ece7;
+}

@@ -1,6 +1,7 @@
 /* Created by Liss on 02.02.2017.  */
 
 window.onload = function () {
+    var students = createStudentList();
 
     createListForm();
 
@@ -13,7 +14,13 @@ window.onload = function () {
 
          viewStudentList(students, placeName, placeGender, placeSkype);
      }
-     addStudentToForm();
+
+    addStudentToForm();
+
+
+showInformation(students[2]);
+
+
 
 
 };

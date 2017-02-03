@@ -1,9 +1,10 @@
 /**
  * Created by Liss on 02.02.2017.
  */
+
 QUnit.module('test-for-liststudents test');
 
-//Don't work
+
 QUnit.test('Test 1', function (assert) {
     var expected, actual;
 

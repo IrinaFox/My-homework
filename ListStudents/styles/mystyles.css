@@ -6,6 +6,7 @@ header {
     padding: 5px;
     background-color: #e0fff3;
 }
+
 #infoHeader {
   background-color: #c7e4d8;
   width: 70px;
@@ -18,12 +19,12 @@ header {
     padding: 5px;
     background-color: #beffe5;
 }
+
 #info{
     width: 70px;
     height: 229px;
     background-color: #c7e4d8;
 }
-
 
 #content {
     border: 3px aqua solid;
@@ -31,7 +32,6 @@ header {
     width: 425px;
     float: left;
     padding: 5px;
-
 }
 
 #skypePic, #genderPic, #namePic {
@@ -50,11 +50,9 @@ header {
 
 input {
     float: none;
-
 }
 
 .bright {
-
     border: 2px black solid;
     float: left;
     padding: 5px;

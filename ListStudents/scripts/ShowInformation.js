@@ -5,6 +5,7 @@
 function showInformation (student) {
     var infoWindow = document.createElement('div'),
         information = getInformation(student).join('');
+    infoWindow.setAttribute('id', 'infoWindowList');
 
     infoWindow.setAttribute('class', 'infoWindow');
     infoWindow.addEventListener('mouseover', function () {

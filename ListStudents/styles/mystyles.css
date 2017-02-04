@@ -45,7 +45,7 @@ header {
     float: left;
     padding: 5px;
     margin: 20px;
-    background-color: #e2ffeb;
+    background-color: #a2a5a4;
 }
 
 input {
@@ -62,10 +62,3 @@ input {
     background-color: #ebf0eb;
 }
 
-.brightDiv {
-    width: 100px;
-    border: 2px black solid;
-    float: left;
-    padding: 5px;
-    background-color: #ddffeb;
-}

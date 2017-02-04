@@ -27,21 +27,9 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ListStudents/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="680">
-              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+            <state vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="680">
+              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CloseInfoWindow.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ListStudents/scripts/CloseInfoWindow.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc;n#closeInfoWindow#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -61,8 +49,8 @@
       <file leaf-file-name="ShowInformation.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ListStudents/scripts/ShowInformation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+              <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
               <folding>
                 <element signature="n#!!doc;n#showInformation#0" expanded="false" />
               </folding>
@@ -70,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ButtonEvent.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ButtonEvent.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ListStudents/scripts/ButtonEvent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="1700">
-              <caret line="85" column="42" selection-start-line="85" selection-start-column="42" selection-end-line="85" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.4931677" vertical-offset="963" max-vertical-offset="1768">
+              <caret line="82" column="27" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="27" />
               <folding>
                 <element signature="n#!!doc;n#addEventToButton#0" expanded="false" />
               </folding>
@@ -82,10 +70,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mystyles.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mystyles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ListStudents/styles/mystyles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47204968" vertical-offset="385" max-vertical-offset="1190">
+            <state vertical-scroll-proportion="0.0" vertical-offset="385" max-vertical-offset="1190">
               <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
               <folding />
             </state>
@@ -124,9 +112,9 @@
         <option value="$PROJECT_DIR$/ListStudents/scripts/AddStudentToForm.js" />
         <option value="$PROJECT_DIR$/ListStudents/index.html" />
         <option value="$PROJECT_DIR$/ListStudents/scripts/main.js" />
+        <option value="$PROJECT_DIR$/ListStudents/styles/mystyles.css" />
         <option value="$PROJECT_DIR$/ListStudents/scripts/ShowInformation.js" />
         <option value="$PROJECT_DIR$/ListStudents/scripts/ButtonEvent.js" />
-        <option value="$PROJECT_DIR$/ListStudents/styles/mystyles.css" />
       </list>
     </option>
   </component>
@@ -565,19 +553,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ListStudents/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="680">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+        <state vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="680">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ListStudents/scripts/CloseInfoWindow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc;n#closeInfoWindow#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -591,10 +569,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ListStudents/styles/mystyles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="385" max-vertical-offset="1190">
+          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ListStudents/scripts/ShowInformation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc;n#showInformation#0" expanded="false" />
           </folding>
@@ -603,19 +589,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ListStudents/scripts/ButtonEvent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="1700">
-          <caret line="85" column="42" selection-start-line="85" selection-start-column="42" selection-end-line="85" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.4931677" vertical-offset="963" max-vertical-offset="1768">
+          <caret line="82" column="27" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="27" />
           <folding>
             <element signature="n#!!doc;n#addEventToButton#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ListStudents/styles/mystyles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47204968" vertical-offset="385" max-vertical-offset="1190">
-          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>

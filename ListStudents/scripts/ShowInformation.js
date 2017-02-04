@@ -11,6 +11,7 @@ function showInformation (student) {
     infoWindow.addEventListener('mouseover', function () {
         infoWindow.removeAttribute('class');
         infoWindow.setAttribute('class','bright');
+
     }, false);
 
     infoWindow.addEventListener('mouseout', function () {
@@ -18,6 +19,11 @@ function showInformation (student) {
         infoWindow.setAttribute('class','infoWindow');
 
     }, false);
+
+    infoWindow.addEventListener('click', function () {
+       infoWindow.parentNode.removeChild(infoWindow);
+    });
+
 
     document.body.appendChild(infoWindow);
 

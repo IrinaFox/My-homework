@@ -16,9 +16,12 @@ function addEventToButton (irina, svetlana, polina, elena, alexey, vladimir){
 
         buttonIrina.addEventListener('click', function () {
             var infoWindowList = document.getElementById('infoWindowList');
-            if (noRepeat === 0){
+
+            if (noRepeat === 0 || !infoWindowList){
                 showInformation(irina);
                 noRepeat++;
+
+
             } else {
                 noRepeat = 0;
                 infoWindowList.parentNode.removeChild(infoWindowList);
@@ -30,7 +33,8 @@ function addEventToButton (irina, svetlana, polina, elena, alexey, vladimir){
 
         buttonSvetlana.addEventListener('click', function () {
             var infoWindowList = document.getElementById('infoWindowList');
-            if (noRepeat === 0) {
+
+            if (noRepeat === 0 || !infoWindowList) {
                 showInformation(svetlana);
                 noRepeat++;
             } else {
@@ -43,7 +47,7 @@ function addEventToButton (irina, svetlana, polina, elena, alexey, vladimir){
 
         buttonPolina.addEventListener('click', function () {
             var infoWindowList = document.getElementById('infoWindowList');
-            if (noRepeat === 0) {
+            if (noRepeat === 0 || !infoWindowList) {
                 showInformation(polina);
                 noRepeat++;
             } else {
@@ -56,7 +60,7 @@ function addEventToButton (irina, svetlana, polina, elena, alexey, vladimir){
 
         buttonElena.addEventListener('click', function () {
             var infoWindowList = document.getElementById('infoWindowList');
-            if (noRepeat === 0) {
+            if (noRepeat === 0 || !infoWindowList) {
                 showInformation(elena);
             } else {
                 noRepeat = 0;
@@ -69,7 +73,7 @@ function addEventToButton (irina, svetlana, polina, elena, alexey, vladimir){
 
         buttonAlexey.addEventListener('click', function () {
             var infoWindowList = document.getElementById('infoWindowList');
-            if (noRepeat === 0) {
+            if (noRepeat === 0 || !infoWindowList) {
                 showInformation(alexey);
                 noRepeat++;
             } else {
@@ -82,7 +86,7 @@ function addEventToButton (irina, svetlana, polina, elena, alexey, vladimir){
 
         buttonVladimir.addEventListener('click', function () {
             var infoWindowList = document.getElementById('infoWindowList');
-            if (noRepeat === 0) {
+            if (noRepeat === 0 || !infoWindowList) {
                 showInformation(vladimir);
                 noRepeat++;
             } else {

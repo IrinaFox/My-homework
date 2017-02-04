@@ -3,12 +3,21 @@
  */
 
 function showInformation (student) {
-    var infoWindow = document.createElement('div');
+    var infoWindow = document.createElement('div'),
+        information = getInformation(student).join('');
 
-    infoWindow.setAttribute('id', 'infoWindow');
+    infoWindow.setAttribute('class', 'infoWindow');
+    infoWindow.addEventListener('mouseover', function () {
+        infoWindow.removeAttribute('class');
+        infoWindow.setAttribute('class','bright');
+    }, false);
+
+    infoWindow.addEventListener('mouseout', function () {
+        infoWindow.removeAttribute('class');
+        infoWindow.setAttribute('class','infoWindow');
+    }, false);
+
     document.body.appendChild(infoWindow);
-
-    var information = getInformation(student).join('');
 
     infoWindow.innerHTML += information;
 }

@@ -57,7 +57,7 @@ function createListForm() {
     content.appendChild(skypeContent);
     content.appendChild(infoContent);
 
-    //Создание кнопок
+    //Creating buttons
     var buttonIrina = document.createElement('input');
     buttonIrina.setAttribute('id','buttonIrina');
     buttonIrina.value = 'more';

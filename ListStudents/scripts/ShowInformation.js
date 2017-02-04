@@ -15,6 +15,7 @@ function showInformation (student) {
     infoWindow.addEventListener('mouseout', function () {
         infoWindow.removeAttribute('class');
         infoWindow.setAttribute('class','infoWindow');
+
     }, false);
 
     document.body.appendChild(infoWindow);

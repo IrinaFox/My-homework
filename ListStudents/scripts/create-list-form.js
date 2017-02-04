@@ -23,6 +23,11 @@ function createListForm() {
     genderContent.setAttribute('id', 'gender');
     namesContent.setAttribute('id', 'names');
     skypeContent.setAttribute('id', 'skype');
+
+    genderContent.setAttribute('class', 'mainNames');
+    namesContent.setAttribute('class', 'mainNames');
+    skypeContent.setAttribute('class', 'mainNames');
+
     infoContent.setAttribute('id', 'info');
     info.setAttribute('id', 'infoHeader');
 

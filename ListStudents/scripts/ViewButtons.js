@@ -17,15 +17,17 @@ function viewButtons () {
     createButton(buttonPolina,'buttonPolina');
     createButton(buttonElena,'buttonElena');
     createButton(buttonAlexey,'buttonAlexey');
-    createButton(buttonVladimir, 'buttonVladimir');
+    createButton(buttonVladimir,'buttonVladimir');
 }
 
 //Create buttons
-function createButton(name,idName) {
+function createButton (name,idName) {
     var infoContent = document.getElementById('info');
+
     name.setAttribute('id',idName);
     name.value = 'more';
     name.type = 'button';
+
     infoContent.appendChild(name);
     infoContent.innerHTML += "<br/><br/>";
 }

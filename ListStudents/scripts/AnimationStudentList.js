@@ -3,28 +3,28 @@
  */
 
 //Make the window brigth - when mouse on iton every main element: names, gender and skype
-function AnimationStudentList() {
-    var names = document.getElementsByClassName('mainNames'),
+function AnimationStudentList () {
+    var mainWindow = document.getElementsByClassName('mainNames'),
         i;
 
-    names[0].addEventListener('mouseover', function () {
-          names[0].style.backgroundColor = 'azure';
+    mainWindow[0].addEventListener('mouseover', function () {
+        mainWindow[0].style.backgroundColor = 'azure';
      }, false);
-    names[0].addEventListener('mouseout', function () {
-        names[0].style.backgroundColor = '#BEFFE5';
+    mainWindow[0].addEventListener('mouseout', function () {
+        mainWindow[0].style.backgroundColor = '#BEFFE5';
     }, false);
 
-    names[1].addEventListener('mouseover', function () {
-        names[1].style.backgroundColor = 'azure';
+    mainWindow[1].addEventListener('mouseover', function () {
+        mainWindow[1].style.backgroundColor = 'azure';
     }, false);
-    names[1].addEventListener('mouseout', function () {
-        names[1].style.backgroundColor = '#BEFFE5';
+    mainWindow[1].addEventListener('mouseout', function () {
+        mainWindow[1].style.backgroundColor = '#BEFFE5';
     }, false);
 
-    names[2].addEventListener('mouseover', function () {
-        names[2].style.backgroundColor = 'azure';
+    mainWindow[2].addEventListener('mouseover', function () {
+        mainWindow[2].style.backgroundColor = 'azure';
     }, false);
-    names[2].addEventListener('mouseout', function () {
-        names[2].style.backgroundColor = '#BEFFE5';
+    mainWindow[2].addEventListener('mouseout', function () {
+        mainWindow[2].style.backgroundColor = '#BEFFE5';
     }, false);
 }

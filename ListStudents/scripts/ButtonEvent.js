@@ -3,7 +3,7 @@
  */
 
 //adding events for click on needed buttons
-function addEventToButton (irina, svetlana, polina, elena, alexey, vladimir){
+function addEventToButton (irina, svetlana, polina, elena, alexey, vladimir) {
     var buttonIrina = document.getElementById('buttonIrina'),
         buttonSvetlana = document.getElementById('buttonSvetlana'),
         buttonPolina = document.getElementById('buttonPolina'),

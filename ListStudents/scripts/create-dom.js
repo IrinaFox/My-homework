@@ -1,6 +1,4 @@
-/**
- * Created by Liss on 03.02.2017.
- */
+/** Created by Liss on 03.02.2017. */
 
 //Create form for containing student's list
 function createListForm() {
@@ -13,10 +11,7 @@ function createListForm() {
         namesContent = document.createElement('div'),
         genderContent = document.createElement('div'),
         skypeContent = document.createElement('div'),
-        infoContent = document.createElement('div'),
-        skypePic = document.createElement('img'),
-        namePic = document.createElement('img'),
-        genderPic = document.createElement('img');
+        infoContent = document.createElement('div');
 
     //Adding 'id' for having an access to elements
     genderContent.setAttribute('id', 'gender');
@@ -27,27 +22,16 @@ function createListForm() {
     namesContent.setAttribute('class', 'mainNames');
     skypeContent.setAttribute('class', 'mainNames');
 
+    gender.setAttribute('id', 'genderHeader');
+    names.setAttribute('id', 'namesHeader');
+    skype.setAttribute('id', 'skypeHeader');
+
     infoContent.setAttribute('id', 'info');
     info.setAttribute('id', 'infoHeader');
 
     names.innerHTML += 'NAME';
     gender.innerHTML += 'GENDER';
     skype.innerHTML += 'SKYPE';
-
-    //Adding pic of skype
-    skypePic.src = 'pics/skype.png';
-    skypePic.setAttribute('id', 'skypePic');
-    skype.appendChild(skypePic);
-
-    //Adding pic of name
-    namePic.src = 'pics/name.png';
-    namePic.setAttribute('id', 'namePic');
-    names.appendChild(namePic);
-
-    //Adding pic of gender
-    genderPic.src = 'pics/gender.png';
-    genderPic.setAttribute('id', 'genderPic');
-    gender.appendChild(genderPic);
 
     content.appendChild(names);
     content.appendChild(gender);
@@ -58,5 +42,6 @@ function createListForm() {
     content.appendChild(skypeContent);
     content.appendChild(infoContent);
 }
+
 
 

@@ -4,6 +4,7 @@ window.onload = function () {
     var students = createStudentList();
 
     createListForm();
+    addPictures();
     viewButtons();
     AnimationStudentList();
     addStudentToForm();

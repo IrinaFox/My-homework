@@ -1,6 +1,4 @@
-/**
- * Created by Liss on 03.02.2017.
- */
+/** Created by Liss on 03.02.2017. */
 
 //function for creating array with list of students
 function createStudentList () {

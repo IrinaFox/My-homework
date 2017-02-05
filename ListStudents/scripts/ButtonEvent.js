@@ -12,8 +12,6 @@ function addEventToButton (irina, svetlana, polina, elena, alexey, vladimir){
         buttonVladimir = document.getElementById('buttonVladimir'),
         noRepeat = 0; //if button will be clicked more than one time - it won't be work
 
-
-
         buttonIrina.addEventListener('click', function () {
             var infoWindowList = document.getElementById('infoWindowList');
 

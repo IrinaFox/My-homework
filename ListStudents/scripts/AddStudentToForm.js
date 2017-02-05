@@ -4,9 +4,9 @@
 
 //Function displays list of students on the screen
 function addStudentToForm () {
-    var placeName = document.getElementById('names'),
-        placeGender = document.getElementById('gender'),
+    var placeGender = document.getElementById('gender'),
         placeSkype = document.getElementById('skype'),
+        placeName = document.getElementById('names'),
         students = createStudentList();
 
     viewStudentList(students, placeName, placeGender, placeSkype);

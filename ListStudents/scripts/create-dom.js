@@ -35,8 +35,6 @@ function createListForm() {
     gender.innerHTML += 'GENDER';
     skype.innerHTML += 'SKYPE';
 
-
-
     //Adding pic of skype
     skypePic.src = 'pics/skype.png';
     skypePic.setAttribute('id', 'skypePic');
@@ -51,7 +49,6 @@ function createListForm() {
     genderPic.src = 'pics/gender.png';
     genderPic.setAttribute('id', 'genderPic');
     gender.appendChild(genderPic);
-
 
     content.appendChild(names);
     content.appendChild(gender);

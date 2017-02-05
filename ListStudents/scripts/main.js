@@ -7,7 +7,5 @@ window.onload = function () {
     AnimationStudentList();
     addStudentToForm();
     addEventToButton(students[0], students[1], students[2], students[3], students[4], students[5]);
-
-
 };
 

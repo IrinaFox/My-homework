@@ -2,7 +2,7 @@
  * Created by Liss on 03.02.2017.
  */
 
-//adding events for oncklick on needed buttons
+//adding events for click on needed buttons
 function addEventToButton (irina, svetlana, polina, elena, alexey, vladimir){
     var buttonIrina = document.getElementById('buttonIrina'),
         buttonSvetlana = document.getElementById('buttonSvetlana'),
@@ -10,90 +10,25 @@ function addEventToButton (irina, svetlana, polina, elena, alexey, vladimir){
         buttonElena = document.getElementById('buttonElena'),
         buttonAlexey = document.getElementById('buttonAlexey'),
         buttonVladimir = document.getElementById('buttonVladimir'),
-        noRepeat = 0; //if button will be clicked more than one time - it won't be work
+        noRepeat = 0, //if button will be clicked more than one time - it won't be work
+        allButtonStudent = [buttonIrina, buttonSvetlana, buttonPolina, buttonElena, buttonAlexey, buttonVladimir],
+        arrayWithStudentNames = arguments;
 
-        buttonIrina.addEventListener('click', function () {
-            var infoWindowList = document.getElementById('infoWindowList');
-
-            if (noRepeat === 0 || !infoWindowList){
-                showInformation(irina);
-                noRepeat++;
-
-
-            } else {
-                noRepeat = 0;
-                infoWindowList.parentNode.removeChild(infoWindowList);
-                showInformation(irina);
-                noRepeat++;
-            }
-            console.log(noRepeat);
-        }, false);
-
-        buttonSvetlana.addEventListener('click', function () {
+    allButtonStudent.forEach(function(item, i){
+        item.addEventListener('click', function () {
             var infoWindowList = document.getElementById('infoWindowList');
 
             if (noRepeat === 0 || !infoWindowList) {
-                showInformation(svetlana);
+                showInformation(arrayWithStudentNames[i]);
                 noRepeat++;
             } else {
                 noRepeat = 0;
                 infoWindowList.parentNode.removeChild(infoWindowList);
-                showInformation(svetlana);
+                showInformation(arrayWithStudentNames[i]);
                 noRepeat++;
             }
         }, false);
-
-        buttonPolina.addEventListener('click', function () {
-            var infoWindowList = document.getElementById('infoWindowList');
-            if (noRepeat === 0 || !infoWindowList) {
-                showInformation(polina);
-                noRepeat++;
-            } else {
-                noRepeat = 0;
-                infoWindowList.parentNode.removeChild(infoWindowList);
-                showInformation(polina);
-                noRepeat++;
-            }
-        }, false);
-
-        buttonElena.addEventListener('click', function () {
-            var infoWindowList = document.getElementById('infoWindowList');
-            if (noRepeat === 0 || !infoWindowList) {
-                showInformation(elena);
-            } else {
-                noRepeat = 0;
-                infoWindowList.parentNode.removeChild(infoWindowList);
-                showInformation(elena);
-                noRepeat++;
-            }
-            noRepeat++;
-        }, false);
-
-        buttonAlexey.addEventListener('click', function () {
-            var infoWindowList = document.getElementById('infoWindowList');
-            if (noRepeat === 0 || !infoWindowList) {
-                showInformation(alexey);
-                noRepeat++;
-            } else {
-                noRepeat = 0;
-                infoWindowList.parentNode.removeChild(infoWindowList);
-                showInformation(alexey);
-                noRepeat++;
-            }
-        }, false);
-
-        buttonVladimir.addEventListener('click', function () {
-            var infoWindowList = document.getElementById('infoWindowList');
-            if (noRepeat === 0 || !infoWindowList) {
-                showInformation(vladimir);
-                noRepeat++;
-            } else {
-                noRepeat = 0;
-                infoWindowList.parentNode.removeChild(infoWindowList);
-                showInformation(vladimir);
-                noRepeat++;
-            }
-        }, false);
-
-
+    });
 }
+
+

@@ -31,6 +31,7 @@ function studentView (keyOfStudentShort, keyOfStudentFull) {
 
     lineStudent.appendChild(ownButton);
     content.appendChild(lineStudent);
+    AnimationLineStudent(lineStudent);
 }
 
 //For one header line
@@ -56,4 +57,16 @@ function itemView (keyOfHeader) {
 
     lineHeader.appendChild(infoHeader);
     content.appendChild(lineHeader);
+}
+
+function AnimationLineStudent (lineStudent) {
+    lineStudent.addEventListener('mouseover', function () {
+        lineStudent.removeAttribute('class');
+        lineStudent.setAttribute('class','lineBright');
+    }, false);
+
+    lineStudent.addEventListener('mouseout', function () {
+        lineStudent.removeAttribute('class');
+        lineStudent.setAttribute('class','line');
+    }, false);
 }

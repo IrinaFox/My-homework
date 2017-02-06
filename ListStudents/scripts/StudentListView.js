@@ -16,6 +16,3 @@ function studentListView () {
         studentView(shortForm, fullForm);
     });
 }
-
-
-

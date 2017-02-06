@@ -9,4 +9,3 @@ function createStudentList () {
 
     return [irina, svetlana, polina, elena, alexey, vladimir];
 }
-

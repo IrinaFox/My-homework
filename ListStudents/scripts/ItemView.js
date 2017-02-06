@@ -29,7 +29,6 @@ function studentView (keyOfStudentShort, keyOfStudentFull) {
 
     lineStudent.setAttribute('class', 'line');
 
-
     lineStudent.appendChild(ownButton);
     content.appendChild(lineStudent);
 }
@@ -58,6 +57,3 @@ function itemView (keyOfHeader) {
     lineHeader.appendChild(infoHeader);
     content.appendChild(lineHeader);
 }
-
-
-

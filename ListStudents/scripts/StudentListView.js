@@ -4,7 +4,7 @@ function studentListView () {
         header = {};
 
     header.fullname = 'FULL NAME';
-    header.email = 'E-MAIL';
+    header.email = 'SKYPE';
     header.gender = 'GENDER';
 
     itemView(header);
@@ -15,4 +15,6 @@ function studentListView () {
 
         studentView(shortForm, fullForm);
     });
+    addPictureToHeader();
 }
+

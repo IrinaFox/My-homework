@@ -50,3 +50,8 @@ div {
 .lineBright {
     background-color: #b6ffec;
 }
+
+.pic {
+    width: 15px;
+    height: 15px;
+}

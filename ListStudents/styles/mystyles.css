@@ -1,55 +1,10 @@
-header {
-    width: 100px;
-    height: 30px;
-    border: 2px black solid;
-    float: left;
-    padding: 5px;
-    background-color: #e0fff3;
-}
-
-#infoHeader {
-  background-color: #c7e4d8;
-  width: 70px;
-}
-
-#gender, #names, #skype, #info{
-    width: 100px;
-    border: 2px black solid;
-    float: left;
-    padding: 5px;
-    background-color: #beffe5;
-}
-
-#info{
-    width: 70px;
-    height: 229px;
-    background-color: #c7e4d8;
-}
-
-#content {
-    border: 3px aqua solid;
-    background-color: aquamarine;
-    width: 425px;
-    float: left;
-    padding: 5px;
-}
-
-#skypePic, #genderPic, #namePic {
-    width: 25px;
-    height: 25px;
-}
-
 .infoWindow {
-    height: 100px;
-    border: 2px black solid;
+    border: 1px black solid;
     float: left;
     padding: 5px;
     margin: 20px;
     background-color: #a2a5a4;
-}
 
-input {
-    float: none;
 }
 
 .bright {
@@ -61,3 +16,34 @@ input {
     font-size: 18px;
 }
 
+div {
+    border: 1px black solid;
+    float: none;
+
+}
+
+#content {
+    border: 3px #00d0d0 solid;
+    background-color: #7bfada;
+    float: left;
+    padding: 5px;
+    width: 600px;
+}
+
+.miniDiv {
+    float: left;
+    width: 150px;
+}
+
+.infoDiv {
+    float: none;
+    width: 200px;
+}
+
+.line {
+    background-color: #e3fff1;
+}
+
+#menu {
+    background-color: cadetblue;
+}

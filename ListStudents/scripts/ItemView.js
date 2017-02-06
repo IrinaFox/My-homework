@@ -79,8 +79,6 @@ function addPictureToHeader () {
         skypePic = document.createElement('img'),
         genderPic = document.createElement('img');
 
-    console.log(headers[1]);
-
     namePic.src='pics/name.png';
     skypePic.src='pics/skype.png';
     genderPic.src='pics/gender.png';

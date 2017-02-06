@@ -9,12 +9,8 @@ function studentListView () {
 
     itemView(header);
 
-    studentList.students.forEach(function (item) {
-        var shortForm = item.getShortForm(),
-            fullForm = item.getFullForm();
+    studentList.displayStudentList();
 
-        studentView(shortForm, fullForm);
-    });
     addPictureToHeader();
 }
 

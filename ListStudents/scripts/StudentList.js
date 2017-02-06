@@ -9,5 +9,14 @@ function StudentList () {
 
     this.students = [this.irina, this.svetlana, this.polina, this.elena, this.alexey, this.vladimir];
 
+    this.displayStudentList = function () {
+        this.students.forEach(function (item) {
+            var shortForm = item.getShortForm(),
+                fullForm = item.getFullForm();
+
+            studentView(shortForm, fullForm);
+        });
+    };
+
     return this;
 }

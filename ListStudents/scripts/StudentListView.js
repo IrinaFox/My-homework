@@ -1,6 +1,6 @@
 //Displays the student list on the screen
 function studentListView () {
-    var students = createStudentList(),
+    var studentList = new StudentList(),
         header = {};
 
     header.fullname = 'FULL NAME';
@@ -9,7 +9,7 @@ function studentListView () {
 
     itemView(header);
 
-    students.forEach(function (item) {
+    studentList.students.forEach(function (item) {
         var shortForm = item.getShortForm(),
             fullForm = item.getFullForm();
 

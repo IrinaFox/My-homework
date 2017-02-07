@@ -1,4 +1,5 @@
+"use strict";
 window.addEventListener('load', function () {
-    "use strict";
-    studentListView();
+    var studentList = new StudentList();
+    studentList.displayStudentList();
 }, false);

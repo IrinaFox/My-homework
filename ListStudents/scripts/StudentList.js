@@ -10,12 +10,22 @@ function StudentList () {
     this.students = [this.irina, this.svetlana, this.polina, this.elena, this.alexey, this.vladimir];
 
     this.displayStudentList = function () {
+        var header = {};
+
+        header.fullname = 'FULL NAME';
+        header.email = 'SKYPE';
+        header.gender = 'GENDER';
+
+        itemView(header);
+
         this.students.forEach(function (item) {
             var shortForm = item.getShortForm(),
                 fullForm = item.getFullForm();
 
             studentView(shortForm, fullForm);
         });
+
+        addPictureToHeader();
     };
 
     return this;

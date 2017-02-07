@@ -7,12 +7,9 @@ function displayMoreInfo (keyOfStudent) {
     infoWindow.setAttribute('class', 'infoWindow');
 
     for (key in keyOfStudent) {
-        var infoElement = document.createElement('div');
+        var infoElement = '<div class="infoDiv">'+ key + ': ' + keyOfStudent[key] +'</div>';
 
-        infoElement.innerHTML = key + ': ' + keyOfStudent[key];
-        infoElement.setAttribute('class', 'infoDiv');
-
-        infoWindow.appendChild(infoElement);
+        infoWindow.innerHTML += infoElement;
     }
 
     document.body.appendChild(infoWindow);

@@ -1,18 +1,16 @@
 //Displays one student in one line with working button
 function studentView (keyOfStudentShort, keyOfStudentFull) {
-    var lineStudent = document.createElement('div'),
-        content = document.getElementById('content'),
+    var content = document.getElementById('content'),
+        lineStudent = document.createElement('div'),
         ownButton = document.createElement('input'),
         key;
 
     for (key in keyOfStudentShort){
-        var cellStudent = document.createElement('div');
+        var cellStudent = '<div class="miniDiv">'+ keyOfStudentShort[key] + '</div>';
 
-        cellStudent.innerHTML = keyOfStudentShort[key];
-        cellStudent.setAttribute('class', 'miniDiv');
-
-        lineStudent.appendChild(cellStudent);
+        lineStudent.innerHTML += cellStudent;
     }
+
     ownButton.value = 'More info';
     ownButton.type = 'button';
 
@@ -74,21 +72,13 @@ function AnimationLineStudent (lineStudent) {
 
 //Adding pictures
 function addPictureToHeader () {
-    var headers = document.getElementById('menu').children,
-        namePic = document.createElement('img'),
-        skypePic = document.createElement('img'),
-        genderPic = document.createElement('img');
+    var genderPic = '<img src="pics/gender.png" class="pic"> </img>',
+        skypePic = '<img src="pics/skype.png" class="pic"> </img>',
+        namePic = '<img src="pics/name.png" class="pic"> </img>',
+        headers = document.getElementById('menu').children;
 
-    namePic.src='pics/name.png';
-    skypePic.src='pics/skype.png';
-    genderPic.src='pics/gender.png';
-
-    namePic.setAttribute('class', 'pic');
-    skypePic.setAttribute('class', 'pic');
-    genderPic.setAttribute('class', 'pic');
-
-    headers[0].appendChild(namePic);
-    headers[1].appendChild(skypePic);
-    headers[2].appendChild(genderPic);
+    headers[0].innerHTML += namePic;
+    headers[1].innerHTML += skypePic;
+    headers[2].innerHTML += genderPic;
 }
 

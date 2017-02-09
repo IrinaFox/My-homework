@@ -1,20 +1,23 @@
 //Displays one student in one line with working button
 function studentView (keyOfStudentShort, keyOfStudentFull) {
-    var content = document.getElementById('content'),
-        lineStudent = document.createElement('div'),
-        ownButton = document.createElement('input'),
+    var keys=[],
+        index = 0,
         key;
 
-    for (key in keyOfStudentShort){
-        var cellStudent = '<div class="miniDiv">'+ keyOfStudentShort[key] + '</div>';
-
-        lineStudent.innerHTML += cellStudent;
+    for (key in keyOfStudentShort) {
+        keys[index]= keyOfStudentShort[key];
+        index++;
     }
+    var butName = keys[1];
+    createLine(keys[0], keys[1], keys[2], butName);
 
-    ownButton.value = 'More info';
-    ownButton.type = 'button';
 
+    //Dont work
+    var ownButton = (document.getElementsByName(butName))[0];
+    console.log(ownButton);
+      
     ownButton.addEventListener('click', function () {
+        console.log('work');
         var infoWindowList = document.getElementById('infoWindowList');
 
         if(infoWindowList) {
@@ -25,12 +28,15 @@ function studentView (keyOfStudentShort, keyOfStudentFull) {
         }
      }, false);
 
-    lineStudent.setAttribute('class', 'line');
 
-    lineStudent.appendChild(ownButton);
-    content.appendChild(lineStudent);
-    AnimationLineStudent(lineStudent);
+    //AnimationLineStudent(lineStudent);
+
 }
+
+
+
+
+
 
 //For one header line
 function itemView (keyOfHeader) {

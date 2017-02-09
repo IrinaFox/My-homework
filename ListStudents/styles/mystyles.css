@@ -41,6 +41,9 @@ div {
 
 .line {
     background-color: #e3fff1;
+    float: left;
+    width: 600px;
+
 }
 
 #menu {

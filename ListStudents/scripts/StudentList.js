@@ -19,6 +19,7 @@ function StudentList () {
         itemView(header);
 
         this.students.forEach(function (item) {
+
             var shortForm = item.getShortForm(),
                 fullForm = item.getFullForm();
 

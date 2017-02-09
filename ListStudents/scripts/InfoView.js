@@ -1,5 +1,5 @@
 //Create new window with more information
-function displayMoreInfo (keyOfStudent) {
+function displayMoreInfo2 (keyOfStudent) {
     var infoWindow = document.createElement('div'),
         key;
 
@@ -17,6 +17,9 @@ function displayMoreInfo (keyOfStudent) {
     animationShowList(infoWindow);
 }
 
+
+
+
 //Add animation to info-window - it makes the window brighter and bigger
 function animationShowList (neededElement) {
     neededElement.addEventListener('mouseover', function () {
@@ -32,4 +35,24 @@ function animationShowList (neededElement) {
     neededElement.addEventListener('click', function () {
         neededElement.parentNode.removeChild(neededElement);
     }, false);
+}
+
+
+
+function displayMoreInfo (keyOfStudent) {
+    var infoWindow = document.createElement('div'),
+        key;
+
+    infoWindow.setAttribute('id', 'infoWindowList');
+    infoWindow.setAttribute('class', 'infoWindow');
+
+    for (key in keyOfStudent) {
+        var infoElement = '<div class="infoDiv">'+ key + ': ' + keyOfStudent[key] +'</div>';
+
+        infoWindow.innerHTML += infoElement;
+    }
+
+    document.body.appendChild(infoWindow);
+
+    animationShowList(infoWindow);
 }

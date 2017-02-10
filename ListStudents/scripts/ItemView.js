@@ -1,42 +1,11 @@
-//Displays one student in one line with working button
-function studentView (keyOfStudentShort, keyOfStudentFull) {
-    var keys=[],
-        index = 0,
-        key;
-
-    for (key in keyOfStudentShort) {
-        keys[index]= keyOfStudentShort[key];
-        index++;
-    }
-    var butName = keys[1];
-    createLine(keys[0], keys[1], keys[2], butName);
-
-
-    //Dont work
-    var ownButton = (document.getElementsByName(butName))[0];
-    console.log(ownButton);
-      
-    ownButton.addEventListener('click', function () {
-        console.log('work');
-        var infoWindowList = document.getElementById('infoWindowList');
-
-        if(infoWindowList) {
-            infoWindowList.parentNode.removeChild(infoWindowList);
-            displayMoreInfo(keyOfStudentFull);
-        } else {
-            displayMoreInfo(keyOfStudentFull);
-        }
-     }, false);
-
-
-    //AnimationLineStudent(lineStudent);
-
+function createStudent (fullName, skype, gender, buttonName) {
+    var content = document.getElementById('content'),
+        studentLine = listTpl.replace(':fullName', fullName)
+            .replace(':skype', skype)
+            .replace(':gender', gender)
+            .replace(':buttonName', buttonName);
+    content.innerHTML += studentLine;
 }
-
-
-
-
-
 
 //For one header line
 function itemView (keyOfHeader) {
@@ -63,19 +32,6 @@ function itemView (keyOfHeader) {
     content.appendChild(lineHeader);
 }
 
-//Make line of student bright when mouse is over
-function AnimationLineStudent (lineStudent) {
-    lineStudent.addEventListener('mouseover', function () {
-        lineStudent.removeAttribute('class');
-        lineStudent.setAttribute('class','lineBright');
-    }, false);
-
-    lineStudent.addEventListener('mouseout', function () {
-        lineStudent.removeAttribute('class');
-        lineStudent.setAttribute('class','line');
-    }, false);
-}
-
 //Adding pictures
 function addPictureToHeader () {
     var genderPic = '<img src="pics/gender.png" class="pic"> </img>',
@@ -88,3 +44,15 @@ function addPictureToHeader () {
     headers[2].innerHTML += genderPic;
 }
 
+  //Make line of student bright when mouse is over
+  function AnimationLineStudent (item) {
+      item.addEventListener('mouseover', function () {
+          item.removeAttribute('class');
+          item.setAttribute('class','lineBright');
+      }, false);
+
+      item.addEventListener('mouseout', function () {
+          item.removeAttribute('class');
+          item.setAttribute('class','line');
+      }, false);
+  }

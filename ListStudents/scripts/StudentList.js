@@ -10,24 +10,57 @@ function StudentList () {
     this.students = [this.irina, this.svetlana, this.polina, this.elena, this.alexey, this.vladimir];
 
     this.displayStudentList = function () {
-        var header = {};
+        createHeader();
 
-        header.fullname = 'FULL NAME';
-        header.email = 'SKYPE';
-        header.gender = 'GENDER';
-
-        itemView(header);
-
-        this.students.forEach(function (item) {
-
+        Array.prototype.forEach.call(this.students, function (item) {
             var shortForm = item.getShortForm(),
-                fullForm = item.getFullForm();
+                fullForm = item.getFullForm(),
+                studentFullName = shortForm['fullName'],
+                studentSkype = shortForm['skype'],
+                studentGender = shortForm['gender'],
+                buttonName = shortForm['skype'],
+                moreButton;
 
-            studentView(shortForm, fullForm);
+            createStudent(studentFullName, studentSkype, studentGender, buttonName);
+
+            moreButton = (document.getElementsByName(buttonName))[0];
+            console.log(moreButton);
+
+            //I Lose context and dont know how to find it
+            moreButton.addEventListener('click', function () {
+                console.log('work');
+                var infoWindowList = document.getElementById('infoWindowList');
+
+                if(infoWindowList) {
+                    infoWindowList.parentNode.removeChild(infoWindowList);
+                    displayMoreInfo(fullForm);
+                } else {
+                    displayMoreInfo(fullForm);
+                }
+            }, false);
         });
-
-        addPictureToHeader();
     };
 
     return this;
+}
+
+
+
+
+
+
+
+
+
+
+function createHeader () {
+    var header = {};
+
+    header.fullname = 'FULL NAME';
+    header.email = 'SKYPE';
+    header.gender = 'GENDER';
+
+    itemView(header);
+
+    addPictureToHeader();
 }

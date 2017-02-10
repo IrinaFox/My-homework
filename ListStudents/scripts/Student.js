@@ -23,7 +23,7 @@ function Student (name, lastName, gender, skype, phone, email, age) {
         fullForm.name = name;
         fullForm.lastName = lastName;
         fullForm.gender = gender;
-        fullForm.age = name;
+        fullForm.age = age;
         fullForm.skype = skype;
 
         return fullForm;

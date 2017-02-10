@@ -1,5 +1,5 @@
 //Create new window with more information
-function displayMoreInfo2 (keyOfStudent) {
+function displayMoreInfo (keyOfStudent) {
     var infoWindow = document.createElement('div'),
         key;
 

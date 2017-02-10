@@ -4,8 +4,12 @@ function createStudent (fullName, skype, gender, buttonName) {
         studentLine = listTpl.replace(':fullName', fullName)
             .replace(':skype', skype)
             .replace(':gender', gender)
-            .replace(':buttonName', buttonName);
-    content.innerHTML += studentLine;
+            .replace(':buttonName', buttonName),
+		buttonDiv = document.createElement('div');
+    
+	buttonDiv.innerHTML = studentLine;
+	
+	content.appendChild(buttonDiv);
 }
 
 //Adding header

@@ -9,4 +9,5 @@ var listTpl = '<div class="line">\
                     <div class="miniDiv">SKYPE<img src="pics/skype.png" class="pic"> </img></div>\
                     <div class="miniDiv">GENDER<img src="pics/gender.png" class="pic"> </img></div>\
                     <div class="miniDiv">MORE</div>\
-              </div>';
+              </div>',
+    infoWindowTpl = '<div class="infoWindow" id="infoWindowList">:information</div> ';

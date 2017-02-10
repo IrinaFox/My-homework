@@ -26,9 +26,9 @@ function StudentList () {
 
             //I Lose context and dont know how to find it
             moreButton.addEventListener('click', function () {
-                console.log('work');
-                var infoWindowList = document.getElementById('infoWindowList');
 
+                var infoWindowList = document.getElementById('infoWindowList');
+                console.log('work');
                 if(infoWindowList) {
                     infoWindowList.parentNode.removeChild(infoWindowList);
                     displayMoreInfo(fullForm);
@@ -41,4 +41,3 @@ function StudentList () {
 
     return this;
 }
-

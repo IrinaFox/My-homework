@@ -1,24 +1,21 @@
-//Create new window with more information
+//Create new window with more information. works only one time
 function displayMoreInfo (keyOfStudent) {
-    var infoWindow = document.createElement('div'),
+    var information = '',
+        infoWindowString,
+        infoWindow,
         key;
 
-    infoWindow.setAttribute('id', 'infoWindowList');
-    infoWindow.setAttribute('class', 'infoWindow');
-
     for (key in keyOfStudent) {
-        var infoElement = '<div class="infoDiv">'+ key + ': ' + keyOfStudent[key] +'</div>';
-
-        infoWindow.innerHTML += infoElement;
+        information += '<div class="infoDiv">' + key + ': ' + keyOfStudent[key] + '</div>';
     }
 
-    document.body.appendChild(infoWindow);
+    infoWindowString = infoWindowTpl.replace(':information', information);
+    document.body.innerHTML += infoWindowString;
+
+    infoWindow = document.getElementById('infoWindowList');
 
     animationShowList(infoWindow);
 }
-
-
-
 
 //Add animation to info-window - it makes the window brighter and bigger
 function animationShowList (neededElement) {
@@ -35,24 +32,4 @@ function animationShowList (neededElement) {
     neededElement.addEventListener('click', function () {
         neededElement.parentNode.removeChild(neededElement);
     }, false);
-}
-
-
-
-function displayMoreInfo (keyOfStudent) {
-    var infoWindow = document.createElement('div'),
-        key;
-
-    infoWindow.setAttribute('id', 'infoWindowList');
-    infoWindow.setAttribute('class', 'infoWindow');
-
-    for (key in keyOfStudent) {
-        var infoElement = '<div class="infoDiv">'+ key + ': ' + keyOfStudent[key] +'</div>';
-
-        infoWindow.innerHTML += infoElement;
-    }
-
-    document.body.appendChild(infoWindow);
-
-    animationShowList(infoWindow);
 }

@@ -10,8 +10,6 @@ function StudentList () {
     this.students = [this.irina, this.svetlana, this.polina, this.elena, this.alexey, this.vladimir];
 
     this.displayStudentList = function () {
-
-
         Array.prototype.forEach.call(this.students, function (item) {
             var shortForm = item.getShortForm(),
                 fullForm = item.getFullForm(),

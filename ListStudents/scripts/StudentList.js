@@ -10,7 +10,7 @@ function StudentList () {
     this.students = [this.irina, this.svetlana, this.polina, this.elena, this.alexey, this.vladimir];
 
     this.displayStudentList = function () {
-        createHeader();
+
 
         Array.prototype.forEach.call(this.students, function (item) {
             var shortForm = item.getShortForm(),
@@ -44,23 +44,3 @@ function StudentList () {
     return this;
 }
 
-
-
-
-
-
-
-
-
-
-function createHeader () {
-    var header = {};
-
-    header.fullname = 'FULL NAME';
-    header.email = 'SKYPE';
-    header.gender = 'GENDER';
-
-    itemView(header);
-
-    addPictureToHeader();
-}

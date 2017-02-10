@@ -26,23 +26,23 @@ div {
     background-color: #7bfada;
     float: left;
     padding: 5px;
-    width: 600px;
 }
 
 .miniDiv {
-    float: left;
+   display: inline-block;
     width: 150px;
+    padding: 5px;
 }
 
 .infoDiv {
     float: none;
     width: 200px;
+    margin: 0;
 }
 
 .line {
     background-color: #e3fff1;
     float: left;
-    width: 600px;
 
 }
 
@@ -60,4 +60,7 @@ div {
 
 .green {
     background-color: #5fe8a7;
+}
+.button {
+    margin: auto;
 }

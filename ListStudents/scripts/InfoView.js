@@ -1,6 +1,7 @@
 //Create new window with more information. works only one time
 function displayMoreInfo (keyOfStudent) {
-    var information = '',
+    var infoDiv = document.createElement('div'),
+		information = '',
         infoWindowString,
         infoWindow,
         key;
@@ -10,7 +11,9 @@ function displayMoreInfo (keyOfStudent) {
     }
 
     infoWindowString = infoWindowTpl.replace(':information', information);
-    document.body.innerHTML += infoWindowString;
+	
+    infoDiv.innerHTML += infoWindowString;
+	document.body.appendChild(infoDiv);
 
     infoWindow = document.getElementById('infoWindowList');
 
